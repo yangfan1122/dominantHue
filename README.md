@@ -48,16 +48,16 @@ utils.colors(imagePath, canvasId, {
 ### 配置项
 
 #### `imagePath`
-Type: `string`
+Type: `string`<br>
 图片地址
 
 #### `canvasId`
-Type: `string`
+Type: `string`<br>
 canvas标签Id
 
 #### `options`
-success: 获取颜色成功后的回调
-width: canvas宽
+success: 获取颜色成功后的回调<br>
+width: canvas宽<br>
 height: canvas高
 
 
@@ -67,9 +67,10 @@ height: canvas高
 微信小程序中，成功加载图片后可通过wx.canvasGetImageData获取图片像素数据，但canvas加载图片并无类似onload等事件通知加载完毕，所以此处采用了轮询方式（轮询条件还需进一步验证）检查加载完毕。<br>
 
 
-### 来源
+### 源码来源
 
-RGBaster(https://github.com/briangonzalez/rgbaster.js)，将其改成适合小程序使用的库。
+RGBaster(https://github.com/briangonzalez/rgbaster.js)<br>
+只是做了适合微信小程序使用的改造
 
 
 
