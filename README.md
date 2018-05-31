@@ -1,6 +1,6 @@
 # dominantHue
 
-一个应用在微信小程序中提取图片主要颜色的工具库。
+一个应用在微信小程序中提取图片主要颜色的工具库。<br>
 
 ### 用法
 
@@ -58,13 +58,14 @@ canvas标签Id
 #### `options`
 success: 获取颜色成功后的回调<br>
 width: canvas宽<br>
-height: canvas高
+height: canvas高<br>
 
 
 ### 微信小程序的限制
 
-常规Web开发中，可通过getImageData获取像素数据，但在微信小程序中并无直接获取图片像素数据的方法。<br>
-微信小程序中，成功加载图片后可通过wx.canvasGetImageData获取图片像素数据，但canvas加载图片并无类似onload等事件通知加载完毕，所以此处采用了轮询方式（轮询条件还需进一步验证）检查加载完毕。<br>
+常规Web开发中，可通过getImageData获取像素数据。<br>
+但小程序中只能通过<canvas>的wx.canvasGetImageData获取图片像素数据。<br>
+canvas加载图片并无类似onload等事件通知加载完毕，所以此处采用了轮询方式（轮询条件还需进一步验证）检查加载完毕。<br>
 
 
 ### 源码来源
