@@ -1,0 +1,4 @@
+.canvas-style {
+  width: 100vh;
+  height: 280px;
+}
